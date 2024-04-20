@@ -1,6 +1,7 @@
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import Link from 'next/link'
+import cardList from './data/data'
 import {
   Key,
   ReactElement,
@@ -83,6 +84,22 @@ export default function Home() {
           </div>
         </div>
       </section> */}
+      <div className="text-3xl font-bold text-slate-700 text-center py-2">
+        Previous events
+      </div>
+      <div className="grid lg:grid-cols-3 gap-6">
+        {cardList.map((card) => (
+          <div className="shadow-lg rounded-lg">
+            <img className="rounded-t-lg" src={card.img} alt={card.title} />
+            <div className="p-5">
+              <h3 className="text-3xl font-bold text-slate-700 mb-3">
+                {card.title}
+              </h3>
+              <p className="text-lg font-normal text-gray-600">{card.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </main>
   )
 }
