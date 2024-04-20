@@ -9,13 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^5.0.1",
     "@heroicons/react": "^2.1.3",
+<<<<<<< HEAD
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^1.1.3",
+=======
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+>>>>>>> bcd053e745807162ebcdeeef32e43ef79176d9ec
     "heroicons": "^2.1.3",
+    "lucide-react": "^0.372.0",
     "next": "14.2.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",

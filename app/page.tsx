@@ -1,22 +1,20 @@
+
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import Link from 'next/link'
+<<<<<<< HEAD
 import cardList from './data/data'
+=======
+import React from 'react'
+>>>>>>> bcd053e745807162ebcdeeef32e43ef79176d9ec
 import {
-  Key,
   ReactElement,
-  JSXElementConstructor,
-  ReactNode,
-  ReactPortal,
-  AwaitedReactNode,
 } from 'react'
 
 export default function Home() {
   return (
     <main
-      className="flex min-h-screen flex-col p-2
-    // bg-[url('/weare.jpg')] 
-    bg-gradient-to-r from-[#e5e7eb] to-[#f3f4f6]
+      className="flex min-h-screen flex-col p-2 bg-gradient-to-r from-[#e5e7eb] to-[#f3f4f6]
     "
     >
       {/* <Navbar /> */}
@@ -33,9 +31,9 @@ export default function Home() {
               href="https://decentracode.xyz/dashboard"
               className="text-blue-400 md:text-md"
             >
-              to purchase tickets for web3 events,{' '}
+              to purchase tickets for web3 events.{' '}
             </Link>
-            , Click on the link below.
+            Click on the link below.
           </p>
           <Link
             href="/dashboard"
@@ -157,3 +155,5 @@ function Navbar() {
     </div>
   )
 }
+
+ 
